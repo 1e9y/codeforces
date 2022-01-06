@@ -1,0 +1,26 @@
+{
+  "template": [
+    {
+      "alias": "go",
+      "lang": "32",
+      "path": "/Users/benjamin/Code/codeforces/template.go",
+      "suffix": [
+        "go"
+      ],
+      "before_script": "",
+      "script": "go run $%full%$",
+      "after_script": ""
+    }
+  ],
+  "default": 0,
+  "gen_after_parse": true,
+  "host": "https://codeforces.com",
+  "proxy": "",
+  "folder_name": {
+    "acmsguru": "acmsguru",
+    "contest": "",
+    "group": "group",
+    "gym": "gym",
+    "root": "solutions"
+  }
+}
