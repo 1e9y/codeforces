@@ -36,6 +36,12 @@ func ReadInt(in *bufio.Reader) int {
 	return n
 }
 
+func ReadLine(in *bufio.Reader) string {
+	line, _ := in.ReadString('\n')
+	line = strings.Trim(line, "\n\r")
+	return line
+}
+
 func ReadLineParts(in *bufio.Reader) []string {
 	line, _ := in.ReadString('\n')
 	line = strings.Trim(line, "\n\r")
