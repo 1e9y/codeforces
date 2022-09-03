@@ -1,0 +1,20 @@
+name: Run tests against virtual judge
+
+on:
+  workflow_dispatch:
+    inputs:
+      contest:
+        description: "Contest number"
+        required: true
+        type: string
+      problem:
+        description: 'Problem number'
+        type: string
+        required: false
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "${{ inputs.contest }} - ${{ inputs.problem }}"
